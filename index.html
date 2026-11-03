@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Butterfly Puzzle Project</title>
+
+    <style>
+        body {
+            background-color: #e9edf2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #263445;
+        }
+
+        /* MAIN GRID LAYOUT */
+        .page {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* INTRO SECTION */
+        .intro {
+            background-color: #243b55;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        /* PUZZLE SECTION */
+        .puzzle-section {
+            background-color: white;
+            padding: 25px;
+            border: 2px solid #cbd5e1;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* FLEXBOX PUZZLE */
+        .puzzle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            gap: 0;
+        }
+
+        .puzzle img {
+            width: 25%;
+            height: auto;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        /* HIDE INCORRECT PIECE */
+        .wrong-piece {
+            display: none;
+        }
+
+        /* DATE SECTION */
+        .date-section {
+            background-color: #dce5ef;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <section class="intro">
+        <h1>Butterfly Puzzle Project</h1>
+        <h2>Created by: Your Name</h2>
+        <p>My selected puzzle is Butterflies.</p>
+        <p>This project uses CSS Grid and Flexbox to create a completed puzzle.</p>
+    </section>
+
+    <section class="puzzle-section">
+        <h2>Completed Puzzle</h2>
+        <p>Using Flexbox to organize the puzzle pieces.</p>
+
+        <div class="puzzle">
+
+            <img src="images/piece1.jpg" alt="Puzzle piece 1">
+            <img src="images/piece2.jpg" alt="Puzzle piece 2">
+            <img src="images/piece3.jpg" alt="Puzzle piece 3">
+            <img src="images/piece4.jpg" alt="Puzzle piece 4">
+
+            <img src="images/piece5.jpg" alt="Puzzle piece 5">
+            <img src="images/piece6.jpg" alt="Puzzle piece 6">
+            <img src="images/piece7.jpg" alt="Puzzle piece 7">
+            <img src="images/piece8.jpg" alt="Puzzle piece 8">
+
+            <img class="wrong-piece"
+                 src="images/wrong.jpg"
+                 alt="Incorrect puzzle piece">
+
+        </div>
+    </section>
+
+    <section class="date-section">
+        <h2>Assignment Information</h2>
+        <p>Name: Your Name</p>
+        <p>Selected Puzzle: Butterflies</p>
+        <p>Date Completed: November 3, 2026</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>CSS Grid and Flexbox Project</p>
+</footer>
+
+</body>
+</html>
